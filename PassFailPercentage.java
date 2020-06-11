@@ -43,7 +43,7 @@ public class PassFailPercentage {
 		}
 		
 	}
-	public static void testCaseOne() {
+	public static void testCaseOne() throws InterruptedException {
 		totalCases++;
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 ChromeOptions chromeOptions = new ChromeOptions();
@@ -83,7 +83,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.quit();
 	}
 	
-	public static void testCaseTwo() {
+	public static void testCaseTwo() throws InterruptedException {
 		totalCases++;
 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 ChromeOptions chromeOptions = new ChromeOptions();
