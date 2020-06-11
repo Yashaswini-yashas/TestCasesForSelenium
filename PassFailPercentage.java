@@ -71,7 +71,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[@class='btn btn-default']")).click();
 		WebElement Owner = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]"));
 		String outputValue = Owner.getText();
-		if(outputValue.contains("Stacy Jefferson")) {
+		if(outputValue.contains("Thomas Jefferson")) {
 			System.out.println("Owner Found");
 			pass++;
 		}else {
