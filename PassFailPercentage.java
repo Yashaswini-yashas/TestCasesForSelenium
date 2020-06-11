@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class PassFailPercentage {
 	private static String url = "http://34.218.242.50:9000/petclinic-QA/owners/find.html";
 	private static int errorCode = 0;
-	private static int fail;
-	private static int totalCases;
-	private static int pass;
+	private static int fail = 0;
+	private static int totalCases = 0;
+	private static int pass = 0;
 	private static int acceptable = 60;
 	private static float passPercentage;
 	private static float failPercentage;
