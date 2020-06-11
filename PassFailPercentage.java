@@ -69,7 +69,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[@class='btn btn-default']")).click();
 		WebElement Owner = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]"));
 		String outputValue = Owner.getText();
-		if(outputValue.contains("Thomas Jefferson")) {
+		if(outputValue.contains("Stacy Jefferson")) {
 			System.out.println("Owner Found");
 			pass++;
 		}else {
@@ -90,8 +90,8 @@ chromeOptions.addArguments("--no-sandbox");
 WebDriver driver = new ChromeDriver(chromeOptions);
 
 		driver.get(url);
-		if (driver.getPageSource().contains("Last name")) {
-		//	if (driver.getPageSource().contains("Yashaswini")) {
+		//if (driver.getPageSource().contains("Last name")) {
+			if (driver.getPageSource().contains("Yashaswini")) {
 			System.out.println("TEXT IS PRESENT ON THE WEB PAGE");
 			pass++;
 			}
