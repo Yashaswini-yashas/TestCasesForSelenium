@@ -74,7 +74,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 			pass++;
 		}else {
 			System.out.println("Owner not found");
-			errorCode = 2;
+			//errorCode = 2;
 			//System.out.println(errorCode);
 			fail++;
 		}
@@ -97,7 +97,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 			}
 			else {
 			System.out.println("ERROR WHILE FINDING THE TEXT - Failed");
-			errorCode = 2;
+			//errorCode = 2;
 			fail++;
 			}
 		driver.quit();
@@ -127,7 +127,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 				                        pass++;
 				                } else {
 				                        System.out.println("Test Failed");
-				                        errorCode = 2;
+				                        //errorCode = 2;
 				                        fail++;
 				                }
 		driver.quit();
