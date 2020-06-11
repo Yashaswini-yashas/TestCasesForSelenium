@@ -71,7 +71,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[@class='btn btn-default']")).click();
 		WebElement Owner = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]"));
 		String outputValue = Owner.getText();
-		if(outputValue.contains("Thomas Jefferson")) {
+		if(outputValue.contains("Stacy Jefferson")) {
 			System.out.println("Owner Found");
 			pass++;
 		}else {
@@ -124,7 +124,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[contains(text(),'Update Owner')]")).click();
 		WebElement city = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[1]"));
 				                String outputValue1 = city.getText();
-				                if (outputValue1.contentEquals("London")) {
+				                if (outputValue1.contentEquals("new york")) {
 				                        System.out.println("Test Passed!");
 				                        pass++;
 				                } else {
