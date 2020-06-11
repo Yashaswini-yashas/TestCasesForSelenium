@@ -52,7 +52,9 @@ chromeOptions.addArguments("--no-sandbox");
 WebDriver driver = new ChromeDriver(chromeOptions);
 
 		driver.get(url);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//a[@class='btn btn-default']")).click();
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@id='firstName']")).clear();
 		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("Thomas");
 		driver.findElement(By.xpath("//input[@id='lastName']")).clear();
