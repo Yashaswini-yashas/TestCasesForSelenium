@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class PassFailPercentage {
-	private static String url = "http://34.218.242.50:9000/petclinic-QA/owners/find.html";
+	private static String url = "http://34.221.243.81:9000/petclinic-Dev/owners/find.html";
 	private static int errorCode = 0;
 	private static int fail = 0;
 	private static int totalCases = 0;
