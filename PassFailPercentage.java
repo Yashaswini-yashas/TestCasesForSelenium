@@ -71,7 +71,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[@class='btn btn-default']")).click();
 		WebElement Owner = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]"));
 		String outputValue = Owner.getText();
-		if(outputValue.contains("Stacy Jefferson")) {
+		if(outputValue.contains("Thomas Jefferson")) {
 			System.out.println("Owner Found");
 			pass++;
 		}else {
@@ -92,8 +92,8 @@ chromeOptions.addArguments("--no-sandbox");
 WebDriver driver = new ChromeDriver(chromeOptions);
 
 		driver.get(url);
-		//if (driver.getPageSource().contains("Last name")) {
-			if (driver.getPageSource().contains("Yashaswini")) {
+		        if (driver.getPageSource().contains("Last name")) {
+		//	if (driver.getPageSource().contains("Yashaswini")) {
 			System.out.println("TEXT IS PRESENT ON THE WEB PAGE");
 			pass++;
 			}
@@ -124,7 +124,7 @@ WebDriver driver = new ChromeDriver(chromeOptions);
 		driver.findElement(By.xpath("//button[contains(text(),'Update Owner')]")).click();
 		WebElement city = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[1]"));
 				                String outputValue1 = city.getText();
-				                if (outputValue1.contentEquals("new york")) {
+				                if (outputValue1.contentEquals("London")) {
 				                        System.out.println("Test Passed!");
 				                        pass++;
 				                } else {
